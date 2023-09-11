@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리 선택</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script>
+					$(document).ready(function() {
+						$("input[type='checkbox']").on("click",function(){
+							let count=$("input:checked[type='checkbox']").length;
+							
+							if(count > 3) {
+								$(this).prop("checked",false);
+								//this.checked=false;
+								
+								alert("3개까지만 선택할 수 있습니다.");
+								
+							}
+						});
+					});
+					</script>
+</head>
+    <body>
+        <div class="wrap">
+            <div class="form">
+                <div class="button-wrap2">
+                    <div id="btn"></div>
+                    <button type="button" class="catebtn" onclick="login()">CATEGORY</button>
+                </div>
+                <div>
+	                <input type="checkbox" class="cate-check2" name='CATE' value='Category1' onclick='checkOnlyThree(this)'/><spam3>Category1</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category2' onclick='checkOnlyThree(this)'/><spam3>Category2</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category3' onclick='checkOnlyThree(this)'/><spam3>Category3</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category4' onclick='checkOnlyThree(this)'/><spam3>Category4</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category5' onclick='checkOnlyThree(this)'/><spam3>Category5</spam3>
+				</div>	
+				<div>
+	                <input type="checkbox" class="cate-check2" name='CATE' value='Category6' onclick='checkOnlyThree(this)'/><spam3>Category6</spam3>
+	                <input type="checkbox" class="cate-check" name='CATE' value='Category7' onclick='checkOnlyThree(this)'/><spam3>Category7</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category8' onclick='checkOnlyThree(this)'/><spam3>Category8</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category9' onclick='checkOnlyThree(this)'/><spam3>Category9</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category10' onclick='checkOnlyThree(this)'/><spam3>Category10</spam3>
+				</div>
+				<div>
+	                <input type="checkbox" class="cate-check2" name='CATE' value='Category11' onclick='checkOnlyThree(this)'/><spam3>Category11</spam3>
+	                <input type="checkbox" class="cate-check" name='CATE' value='Category12' onclick='checkOnlyThree(this)'/><spam3>Category12</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category13' onclick='checkOnlyThree(this)'/><spam3>Category13</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category14' onclick='checkOnlyThree(this)'/><spam3>Category14</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category15' onclick='checkOnlyThree(this)'/><spam3>Category15</spam3>
+				</div>
+				<div>
+	                <input type="checkbox" class="cate-check2" name='CATE' value='Category16' onclick='checkOnlyThree(this)'/><spam3>Category16</spam3>
+	                <input type="checkbox" class="cate-check" name='CATE' value='Category17' onclick='checkOnlyThree(this)'/><spam3>Category17</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category18' onclick='checkOnlyThree(this)'/><spam3>Category18</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category19' onclick='checkOnlyThree(this)'/><spam3>Category19</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category20' onclick='checkOnlyThree(this)'/><spam3>Category20</spam3>
+				</div>
+				<div>
+	                <input type="checkbox" class="cate-check2" name='CATE' value='Category21' onclick='checkOnlyThree(this)'/><spam3>Category21</spam3>
+	                <input type="checkbox" class="cate-check" name='CATE' value='Category22' onclick='checkOnlyThree(this)'/><spam3>Category22</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category23' onclick='checkOnlyThree(this)'/><spam3>Category23</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category24' onclick='checkOnlyThree(this)'/><spam3>Category24</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category25' onclick='checkOnlyThree(this)'/><spam3>Category25</spam3>
+				</div>
+				<div>
+	                <input type="checkbox" class="cate-check2" name='CATE' value='Category26' onclick='checkOnlyThree(this)'/><spam3>Category26</spam3>
+	                <input type="checkbox" class="cate-check" name='CATE' value='Category27' onclick='checkOnlyThree(this)'/><spam3>Category27</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category28' onclick='checkOnlyThree(this)'/><spam3>Category28</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category29' onclick='checkOnlyThree(this)'/><spam3>Category29</spam3>
+					<input type="checkbox" class="cate-check" name='CATE' value='Category30' onclick='checkOnlyThree(this)'/><spam3>Category30</spam3>
+				</div>
+				<div class="jang-form">
+				장바구니
+				</div>
+				<div class="next-form">
+				<form action="" class="input-group2">
+                    <button class="skip">Skip</button>
+                </form>
+                <form action="" class="input-group2" style="right:425px;">
+                    <button class="next">Next</button>
+                </form>
+				</div>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            
+            
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+        </script>
+    </body>
+</html>
